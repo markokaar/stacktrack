@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Make quick static frontend.",
+    "description": "Avoid states and big functions. Go top-down.",
+    "priority": "1",
+    "status": "LIST"
+  },
+  {
+    "id": 2,
+    "name": "Get the frontend fully working.",
+    "description": "On the frontent I am using React, TypeScript, Bootstrap (with React-Bootstrap). And as I want to make this demo description longer, I will also mention Axios, React-Icons and Font Awesome.",
+    "priority": "3",
+    "status": "LIST"
+  },
+  {
+    "id": 3,
+    "name": "Backend: Java, Spring, MySQL",
+    "description": "Using Java with Spring, and database will be in MySQL.",
+    "priority": "2",
+    "status": "LIST"
+  },
+  {
+    "id": 4,
+    "name": "This task is marked as 'done'.",
+    "description": "When the task is marked as 'done', it will move into new subcategory.",
+    "priority": "2",
+    "status": "DONE"
+  },
+  {
+    "id": 5,
+    "name": "And this deleted.",
+    "description": "After marking the task as 'trash', it will move into trash subcategory.",
+    "priority": "2",
+    "status": "TRASH"
+  },
+  {
+    "id": 6,
+    "name": "One more demo entry...",
+    "description": "After marking the task as 'trash', it will move into trash subcategory.",
+    "priority": "1",
+    "status": "LIST"
+  }
+]

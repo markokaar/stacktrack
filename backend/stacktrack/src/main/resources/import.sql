@@ -1,0 +1,6 @@
+INSERT INTO tasks (task_name, description, priority, status) VALUES ('Make quick static frontend.', 'Avoid states and big functions. Go top-down.', '1', 'LIST');
+INSERT INTO tasks (task_name, description, priority, status) VALUES ('Get the frontend fully working.', 'On the frontent I am using React, TypeScript, Bootstrap (with React-Bootstrap). And as I want to make this demo description longer, I will also mention Axios, React-Icons and Font Awesome.', '3', 'LIST');
+INSERT INTO tasks (task_name, description, priority, status) VALUES ('Backend: Java, Spring, MySQL', 'Using Java with Spring. Database will be in MySQL.', '2', 'LIST');
+INSERT INTO tasks (task_name, description, priority, status) VALUES ('This task is marked as `done`.', 'When the task is marked as `done`, it will move into new subcategory.', '2', 'DONE');
+INSERT INTO tasks (task_name, description, priority, status) VALUES ('And this deleted.', 'After marking the task as `trash`, it will move into trash subcategory.', '2', 'TRASH');
+INSERT INTO tasks (task_name, description, priority, status) VALUES ('One more demo entry...', 'After marking the task as `trash`, it will move into trash subcategory.', '1', 'LIST');
