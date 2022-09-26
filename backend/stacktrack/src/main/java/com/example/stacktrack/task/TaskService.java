@@ -2,15 +2,16 @@ package com.example.stacktrack.task;
 
 import com.example.stacktrack.exception.ResourceNotFoundException;
 import com.example.stacktrack.exception.ValueNotValidException;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class TaskService {
 
     @Autowired
@@ -56,7 +57,7 @@ public class TaskService {
     }
 
     public ResponseEntity<HttpStatus> emptyTrash() {
-        getAll().forEach((task) -> {
+        taskRepository.findAll().forEach((task) -> {
             if (task.getStatus().equals("TRASH"))
                 taskRepository.deleteById(task.getId());
         });

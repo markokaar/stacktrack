@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Arrays;
+import java.util.List;
 
 @Getter
 @Setter
@@ -40,11 +42,13 @@ public class Task {
     private String status;
 
     public boolean hasValidPriority() {
-        return "123".contains(priority);
+        // && !priority.equals("") // Irrelevant when having 'length == 1'
+        return "123".contains(priority) && priority.length() == 1;
     }
 
     public boolean hasValidStatus() {
-        return "LIST DONE TRASH".contains(status);
+        List<String> allowed = Arrays.asList("LIST", "DONE", "TRASH");
+        return allowed.contains(status) && !status.equals("");
     }
 
     public boolean hasValidName() {
